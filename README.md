@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+AirGuard AI – Air Quality & Health Recommendation App
 
-## Getting Started
+Tech Stack: Next.js 15
 
-First, run the development server:
+AirGuard AI is a modern platform that provides real-time air quality information with AI-powered health recommendations. It helps users monitor pollution levels, receive personalized advice, and make informed choices to protect their health.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Real-time AQI Monitoring: View current air quality for your location.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Health-Safe Suggestions: AI advice to reduce exposure during high pollution.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Pollutant Trend Charts: Hourly trends for PM2.5, PM10, NO₂, O₃, SO₂, and more.
 
-## Learn More
+Push Notifications: Alerts for unhealthy air quality levels.
 
-To learn more about Next.js, take a look at the following resources:
+Eco-Friendly Tips: Recommendations for plants and products to improve indoor air quality.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Chatbot: Ask questions about air quality and get instant AI advice.
+Getting StartedFollow these steps to set up and run the AirGuard AI application locally.1. Clone the repositoryUse the following command to clone the project:git clone [https://github.com/TheinMinHtet/airguard-nextjs.git](https://github.com/TheinMinHtet/airguard-nextjs.git)
+cd airguard-nextjs
+2. Install dependenciesInstall all required Node.js packages:npm install
+3. Setup environment variablesCreate a file named .env.local in the root directory and add your Gemini API key. This key is crucial for the AI-powered features.Note: Replace xxxxxxxxxxxxxxxxxxxxxxx with your actual API key.# Create the environment file and add the key
+echo "NEXT_PUBLIC_GEMINI_API_KEY=xxxxxxxxxxxxxxxxxxxxxxx" > .env.local
+4. Run the development serverStart the application in development mode:npm run dev
+The application will be accessible at http://localhost:3000.
