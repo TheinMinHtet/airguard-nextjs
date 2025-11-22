@@ -17,10 +17,30 @@ Push Notifications: Alerts for unhealthy air quality levels.
 Eco-Friendly Tips: Recommendations for plants and products to improve indoor air quality.
 
 Chatbot: Ask questions about air quality and get instant AI advice.
-Getting StartedFollow these steps to set up and run the AirGuard AI application locally.1. Clone the repositoryUse the following command to clone the project:git clone [https://github.com/TheinMinHtet/airguard-nextjs.git](https://github.com/TheinMinHtet/airguard-nextjs.git)
+## 🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+### **1–4. Setup & Run the Project (All Steps Combined)**
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/TheinMinHtet/airguard-nextjs.git
+
+# 2. Move into the project folder
 cd airguard-nextjs
-2. Install dependenciesInstall all required Node.js packages:npm install
-3. Setup environment variablesCreate a file named .env.local in the root directory and add your Gemini API key. This key is crucial for the AI-powered features.Note: Replace xxxxxxxxxxxxxxxxxxxxxxx with your actual API key.# Create the environment file and add the key
+
+# 3. Install dependencies
+npm install
+
+# 4. Add environment variable
 echo "NEXT_PUBLIC_GEMINI_API_KEY=xxxxxxxxxxxxxxxxxxxxxxx" > .env.local
-4. Run the development serverStart the application in development mode:npm run dev
-The application will be accessible at http://localhost:3000.
+
+# 5. Start development server
+npm run dev
+
+Project Structure
+components/   → Reusable UI components
+pages/        → Next.js routes/pages
+services/     → AQI & AI request handlers
+types/        → TypeScript interfaces
